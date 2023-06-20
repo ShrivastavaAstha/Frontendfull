@@ -88,7 +88,7 @@ body{
 .icon:hover {
   color:#101820
 }
- @media screen and (min-width: 1264px) {
+ /* @media screen and (min-width: 1264px) {
   .outer-box {
     max-width: 100%;
     height: 400px;
@@ -106,7 +106,7 @@ body{
 
 .inner-box {
   padding: 40px;
-}} 
+}}  */
 
 
 
