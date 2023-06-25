@@ -1,35 +1,35 @@
 React 
 It is a Javascript library for building user interfaces.
-it has speed.
-
-The user interface(UI) is the point of human-computer interaction and communication in a device. This can include display screens,
-keyboards, a mouse and the appearance of a desktop.
 
 Advantages:
 1.Speed
 In browser, at any instance only one html file can be shown.
 If we navigate to any other html file, re-rendering of whole page takes place due to which the browser reloads.
-Such applications which contains many html files are called Multi-page applications, which are considered slow because of reloading
-of browsereach time.
-So, to avoid this, we use ReactJS, which works on the principle of Single Page Application. Therefore we stay on the same page(html file)
-and no reloading of browser takes place, hence the website runs smooth and fast.
+Such applications which contains many html files are called Multi-page applications, which are considered slow 
+because of reloading of browser each time.
+So, to avoid this, we use ReactJS, which works on the principle of Single Page Application. Therefore we stay on
+the same page(html file) and no reloading of browser takes place, hence the website runs smooth and fast.
+
 2.Re-usability(component based architecture)
-In React, if we observe a certain amount of html code, which is being used many times, then instead of writing the whole code each time,
-we make component for the repeating element, and call that component whenever we need that set of html.
+In React, if we observe a certain amount of html code, which is being used many times, then instead of writing the
+whole code each time, we make component for the repeating element, and call that component whenever we need that 
+set of html.
 Javascript functions same as React components.
 
 Component Based Approach:
-A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React
-will be made up of pieces called components.
+A Component is one of the core building blocks of React. In other words, we can say that every application you will
+develop in React will be made up of pieces called components.
 Components make the task of building UIs much easier.
 
 Declarative Approach:
-Declarative programming is a programming paradigm that express the logic of a computation without describing its control flow.
+Declarative programming is a programming paradigm that express the logic of a computation without describing its 
+control flow.
 
 Installation:
 commands to install react ------>>
   npm install -g create-react-app
   create-react-app-version
+command to create reactapp ----->>
   create-react-app <projectname> //----------angle brackets are not included
  create-react-app --version
   
@@ -38,15 +38,13 @@ Reusable Code
 React is designed for speed of implementing the application simplicity and scalability.
 
 node_module:
-node_modules folder is the repository of modules/library which you are using inside your project. What ever you are importing in your
-project that module or library should present inside the node_module folder.When you do npm install that time that module or the library
-install inside the node_module folder and one entry added in package.json file.
+node_modules folder is the repository of modules/library which you are using inside your project. What ever you 
+are importing in your project that module or library should present inside the node_module folder.When you do 
+npm install that time that module or the library install inside the node_module folder and one entry added in 
+package.json file.
 
 The html tags used under render in js is called JSX.
 React Fragment is better than div method as it does not create extra node and also takes less storage .
-
-A special fragment syntax.
-React also introduced a syntactical sugar for fragments.
 
 Expressions in JSX is written in curly braces {}.
 
@@ -56,8 +54,7 @@ contentEditable allows the content to edit .
 --------------------------------------------------------------------------------------------------------------------
 What is components?
 React works on single page application concept, which means only one index.html is there.
-Now with the help of Javascript logic we modify that one index file. Now with the help of 
-Javascript logic we modify that one index.html file and hence our app becomes single page 
+Now with the help of Javascript logic we modify that one index file and hence our app becomes single page 
 application and hence faster.
 
 What is component? 
@@ -65,25 +62,40 @@ Components are basically like functions which return html/jsx.
 In index.js file, we return only one component that is called the parent component which App.js.
 All the other subcomponents and logic are done inside App.js
 
-Basic things to be taken care while making a component.
+-------------------------------------------------------------------------------------------------------------------
+Basic things to be taken care while making a component----------->>
+
 1.A component file name must start with capital letter.
 2.A component must return all the html inside a single tag generally <> </>
 3.A component function must also be capitalized
 4.In component class is replaced by className.
 5.Each component must have closing tags. If there is no closing then use self closing tag in that reference.
-6.Attributes in JSX must be in camelcase convention
+6.Attributes in JSX must be in camelcase convention.
   asthaShrivastava
-
-7.CSS/styling are used in similar fashion
+7.CSS/styling are used in similar fashion.
 8.We cannot directly use javascript after return statement. If we want to use js or we do it before return.
 9.Whenever we want to use Javascript inside JSX then we can do it inside curly braces{}
 
-Use State 
-In a component, if we want to update  any value using normal variable declartion and logic, then it won't be reflected 
-because a components need to be re-rendered in order to reflect the changes.
+Use State :
+In a component, if we want to update any value using normal variable declartion and logic, then it won't be 
+reflected because a components need to be re-rendered in order to reflect the changes.
 So we need to come up with a solution in which a component re-render itself on update of any value/state.
 
 let myname = "astha" // normal coding,
 myname = "srivastava" , no re-render hence no change on update
 
 useState => React // React, component re-render
+
+Always give type of button in button tags.
+
+Way to deploy folder on Github:---------
+1. Create repo on Github as Usual
+2. npm install gh-pages --save-dev
+3. Add this in package.json :-
+    "homepage":"https://gitusername.github.io/reponame"
+4. Add this in scripts of package.json :-
+   "predeploy":"npm run build",
+   "deploy":"gh-pages-d build"
+5. git remote add origin {link}
+6. Remove /build from .gitignore
+7. npm run deploy
