@@ -16,15 +16,6 @@ whole code each time, we make component for the repeating element, and call that
 set of html.
 Javascript functions same as React components.
 
-Component Based Approach:
-A Component is one of the core building blocks of React. In other words, we can say that every application you will
-develop in React will be made up of pieces called components.
-Components make the task of building UIs much easier.
-
-Declarative Approach:
-Declarative programming is a programming paradigm that express the logic of a computation without describing its 
-control flow.
-
 Installation:
 commands to install react ------>>
   npm install -g create-react-app
@@ -32,10 +23,6 @@ commands to install react ------>>
 command to create reactapp ----->>
   create-react-app <projectname> //----------angle brackets are not included
  create-react-app --version
-  
-DOM updates are handled gracefully
-Reusable Code
-React is designed for speed of implementing the application simplicity and scalability.
 
 node_module:
 node_modules folder is the repository of modules/library which you are using inside your project. What ever you 
@@ -44,7 +31,6 @@ npm install that time that module or the library install inside the node_module 
 package.json file.
 
 The html tags used under render in js is called JSX.
-React Fragment is better than div method as it does not create extra node and also takes less storage .
 
 Expressions in JSX is written in curly braces {}.
 
@@ -52,7 +38,7 @@ JSX Attribute in ReactJS :
 contentEditable allows the content to edit .
 
 --------------------------------------------------------------------------------------------------------------------
-What is components?
+What react basically does?
 React works on single page application concept, which means only one index.html is there.
 Now with the help of Javascript logic we modify that one index file and hence our app becomes single page 
 application and hence faster.
@@ -99,3 +85,7 @@ Way to deploy folder on Github:---------
 5. git remote add origin {link}
 6. Remove /build from .gitignore
 7. npm run deploy
+
+Conditional Rendering:
+Whenever we want to render any tag/element/div/component/jsx according to certain conditions, then we 
+use conditional statements (if else but in ternary format) inside jsx. This is called conditional rendering.

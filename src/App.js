@@ -1,9 +1,9 @@
-import Body from "./components/Body";
+import Componentrendering from "./components/Componentrendering";
 import "./App.css";
 const App = () => {
   return (
     <>
-      <Body />
+      <Componentrendering />
     </>
   );
 };
