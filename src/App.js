@@ -1,10 +1,10 @@
 // import Componentrendering from "./components/Componentrendering";
-import Practice4 from "./Practice4";
+import Practice5 from "./Practice5";
 import "./App.css";
 const App = () => {
   return (
     <>
-      <Practice4 />
+      <Practice5 />
     </>
   );
 };
