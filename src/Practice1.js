@@ -9,6 +9,7 @@ const App = () => {
       {isVerfied ? <p>@Astha Srivastava is verified.</p> : null}
 
       <button onClick={() => setisVerified(true)} type="button">
+        {isVerfied ? "deverify Astha" : "Verify Astha"}
         Get Verified
       </button>
     </>
