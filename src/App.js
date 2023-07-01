@@ -1,10 +1,10 @@
 // import Componentrendering from "./components/Componentrendering";
-import Practice6 from "./Practice6";
+import ArrayObj1 from "./homework/ArrayObj1";
 import "./App.css";
 const App = () => {
   return (
     <>
-      <Practice6 />
+      <ArrayObj1 />
     </>
   );
 };
