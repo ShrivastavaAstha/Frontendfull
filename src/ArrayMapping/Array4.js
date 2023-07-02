@@ -1,5 +1,5 @@
 import { useState } from "react";
-const Array3 = () => {
+const Array4 = () => {
   const [novels, setnovels] = useState([
     "Atomic Habits",
     "No Limits",
@@ -34,4 +34,4 @@ const Array3 = () => {
     </>
   );
 };
-export default Array3;
+export default Array4;

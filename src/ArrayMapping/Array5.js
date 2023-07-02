@@ -1,5 +1,5 @@
 import { useState } from "react";
-const Array3 = () => {
+const Array5 = () => {
   const [subject, setsubject] = useState([
     "Physics",
     "Chemistry",
@@ -34,4 +34,4 @@ const Array3 = () => {
     </>
   );
 };
-export default Array3;
+export default Array5;
