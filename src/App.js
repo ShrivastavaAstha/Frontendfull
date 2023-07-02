@@ -1,10 +1,10 @@
 // import Componentrendering from "./components/Componentrendering";
-import Array3 from "./homework/Array3";
+import Array4 from "./homework/Array4";
 import "./App.css";
 const App = () => {
   return (
     <>
-      <Array3 />
+      <Array4 />
     </>
   );
 };
