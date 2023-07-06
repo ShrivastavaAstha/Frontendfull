@@ -39,5 +39,3 @@ const ArrayObj1 = () => {
   );
 };
 export default ArrayObj1;
-
-let newStudents = oldStudents.filter((v, i) => v.name !== "");
