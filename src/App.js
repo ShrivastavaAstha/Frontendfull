@@ -1,10 +1,10 @@
 // import Componentrendering from "./components/Componentrendering";
-import Array5 from "./homework/Array5";
+import Filter2 from "./Filter2";
 import "./App.css";
 const App = () => {
   return (
     <>
-      <Array5 />
+      <Filter2 />
     </>
   );
 };
