@@ -5,33 +5,40 @@ const Array = () => {
 
   const Deleteit = (c) => {
     let precolor = [...color];
-    let newcolor = precolor.filter((v, i) => v !== c);
+    let newcolor = precolor.filter((v) => v !== c);
 
     setcolor(newcolor);
   };
 
-  const Updateit = (v) => {
-    let precolor = [...color];
-    for (let c of color) {
-      if (v !== c) {
-        v = "Magenta";
-      }
-    }
+  // const Updateit = (c) => {
+  //   let precolor = [...color];
+  //   for (let i = 0; i < precolor.length; i++) {
+  //     if (precolor[i] === c) {
+  //       precolor[i] = "Magenta";
+  //     }
+  //   }
+  //   setcolor(precolor);
+  // };
+  const Updateit = (currentIndex, newcolor) => {
+    const precolor = [...color];
+    precolor[currentIndex] = newcolor;
     setcolor(precolor);
   };
   return (
     <>
-      <ul>
-        {color.map((v) => {
-          return (
-            <>
+      {color.map((v, i) => {
+        return (
+          <div key={i}>
+            <ul>
               <li>{v}</li>
               <button onClick={() => Deleteit(v)}>Delete Me</button>
-              <button onCLick={() => Updateit(v)}>Update Me</button>
-            </>
-          );
-        })}
-      </ul>
+              <button onCLick={() => Updateit(i, "Magenta")} type="button">
+                Update Me
+              </button>
+            </ul>
+          </div>
+        );
+      })}
     </>
   );
 };

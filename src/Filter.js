@@ -13,11 +13,21 @@ const ArrayObj = () => {
     let newnovels = prenovels.filter((v, i) => v.name !== c.name);
     setNovels(newnovels);
   };
-  const updateCurrent = (v) => {
+  // const updateCurrent = (v) => {
+  //   let prenovels = [...Novels];
+  //   for (let c of Novels) {
+  //     if (v.author !== c.author) {
+  //       v.author = "Anonymous";
+  //     }
+  //   }
+  //   setNovels(prenovels);
+  // };
+  //To update one particular element:
+  const updateCurrent = (c) => {
     let prenovels = [...Novels];
-    for (let c of Novels) {
-      if (v.author !== c.author) {
-        v.author = "Anonymous";
+    for (let i = 0; i < prenovels.length; i++) {
+      if (prenovels.author !== c.author) {
+        c.author = "Anonymous";
       }
     }
     setNovels(prenovels);
