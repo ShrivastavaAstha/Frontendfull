@@ -1,10 +1,10 @@
 // import Componentrendering from "./components/Componentrendering";
-import AluminiManagement from "./AluminiManagement";
+import TaskManagement from "./TaskManagement";
 import "./App.css";
 const App = () => {
   return (
     <>
-      <AluminiManagement />
+      <TaskManagement />
     </>
   );
 };
