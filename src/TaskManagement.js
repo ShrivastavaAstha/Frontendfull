@@ -16,6 +16,16 @@ const Taskmanagement = () => {
     pretask.push(newtask);
     settask(pretask);
   };
+  const handlestarttask = (currentIndex, newstatus) => {
+    const oldtask = [...task];
+    oldtask[currentIndex].taskstatus = newstatus;
+    settask(oldtask);
+  };
+  const handledeletetask = (index) => {
+    let oldtask = [...task];
+    let newtask = oldtask.filter((v, i) => i !== index);
+    settask(newtask);
+  };
   return (
     <>
       <h1>Task Managemaent:</h1>
@@ -59,6 +69,10 @@ const Taskmanagement = () => {
               <li>Task Title: {v.title}</li>
               Task Description: {v.description} <br />
               Task Due Date: {v.duedate}
+              <button onclick={() => handlestarttask(i, "On-going")}>
+                Start task
+              </button>
+              <button onclick={() => handledeletetask(i)}>Delete task</button>
             </ul>
           </div>
         );
@@ -67,3 +81,17 @@ const Taskmanagement = () => {
   );
 };
 export default Taskmanagement;
+
+// const handlestarttask = (currentIndex, newstatus) => {
+//   const oldtask = [...task];
+//   oldtask[currentIndex].taskstatus = newstatus;
+//   setbook(oldtask);
+// };
+// const handledeletetask = (index) => {
+//   let oldtask = [...task];
+//   let newtask = oldtask.filter((v, i) => i !== index);
+//   setbook(newtask);
+// };
+
+// <button onclick={() => handlestarttask(i, "On-going")}>Start task</button>
+// <button onclick={() => handledeletetask(i)}>Start task</button>

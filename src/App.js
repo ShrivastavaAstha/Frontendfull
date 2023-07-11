@@ -1,10 +1,10 @@
 // import Componentrendering from "./components/Componentrendering";
-import TaskManagement from "./TaskManagement";
+import Practice8 from "./Practice/Practice8";
 import "./App.css";
 const App = () => {
   return (
     <>
-      <TaskManagement />
+      <Practice8 />
     </>
   );
 };
