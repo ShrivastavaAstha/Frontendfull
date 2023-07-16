@@ -3,10 +3,10 @@ import { useState } from "react";
 const ArrayOfObj = () => {
   const [alumini, setalumini] = useState([]);
 
-  const [aluminiName, setaluminiName] = useState("");
-  const [aluminiBranch, setaluminiBranch] = useState("");
-  const [aluminiPy, setaluminiPy] = useState("");
-  const [aluminicw, setaluminicw] = useState("");
+  const [aluminiName, setaluminiName] = useState([]);
+  const [aluminiBranch, setaluminiBranch] = useState([]);
+  const [aluminiPy, setaluminiPy] = useState([]);
+  const [aluminicw, setaluminicw] = useState([]);
 
   //To add new record:
   const addalumini = () => {
